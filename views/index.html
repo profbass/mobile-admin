@@ -1,4 +1,85 @@
-
-<form>
-<h1>dkgjkldfjgkj</h1>
+<form id="person-form">
+  <fieldset>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Add Conference Attendee</h2>
+      </div>
+    </div>
+    <div class="row"> 
+      <div class="col-md-6">
+        <p>Added in any attendee of your conference. This includes company staff, conference speakers and guests.</p>
+      </div>
+    <div class="col-md-6">
+      <p class="help-block"><strong>Quick Tip:</strong> Attendee's are organized by organizations in the app. When you add an attendee to an organizations, they will appear in the app's directory under that catagory.</p>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12"><hr></div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Personal Info</h4>
+        <div class="form-group">
+          <label class="control-label" for="inputName">Full Name</label>
+          <input class="form-control validate" type="text" id="inputName" placeholder="Enter Your Name Here" value=""></div>
+        <div class="form-group">
+          <label for="inputEmail" value="">Email</label>
+          <input class="form-control validate" type="text" id="inputEmail" placeholder="Enter Your Email Here"></div>
+        <div class="form-group">
+          <label for="profilePhotoFileUpload">Avatar Image</label>
+          <input class="form-control" type="file" id="profilePhotoFileUpload"></div>
+        <div class="form-group">
+          <label for="organizationField">Organizations</label>
+          <select class="form-control" id="organizationField">
+            <option value="">None</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="inputBio">Bio</label>
+          <textarea rows="10" id="inputBio" class="form-control"></textarea>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h4>Social Profile</h4>
+        <div class="form-group">
+          <label for="inputFacebook">Facebook ID</label>
+          <input class="form-control" type="text" id="inputFacebook" placeholder="your.user.name">
+          <span class="help-block">Enter the last portion of your facebook profile URL, (http://facebook.com/<strong>your.user.name</strong>) </span>
+        </div>
+        <div class="form-group">
+          <label for="inputTwitter">Twitter Handle</label>
+          <input class="form-control" type="text" id="inputTwitter" placeholder="your.twitter.handle">
+          <span class="help-block">Enter your twitter handle, (@<strong>your.twitter.handle</strong>) </span>
+        </div>
+        <div class="form-group">
+          <label for="inputLinkedin">Linkedin</label>
+          <input class="form-control" type="text" id="inputLinkedin" placeholder="xxxxxx">
+          <span class="help-block">Enter the 'id=' user number from your Linkedin profile URL, (http://linkedin.com/profile/view?id=<strong>xxxxxx</strong>) </span>
+        </div>
+        <div class="form-group">
+          <label for="inputGoggle">Google +</label>
+          <input class="form-control" type="text" id="inputGoogle" placeholder="xxxxxxxxxxxx"></div>
+          <span class="help-block">Enter the user number from your Google Plus profile URL, (http://plus.google.com/<strong>xxxxxxxxxxxx</strong>) </span>
+        <hr>
+        <div class="form-group">
+          <label for="inputPassword">Fun Facts</label>
+          <input class="form-control" type="text" id="factField" placeholder="Enter Fun Facts" >
+          <br>
+          <button class="btn btn-default" type="button" id="addFact" >Add</button>
+          <button class="btn btn-default" type="button" id="clearFact" >Clear</button>
+          <br><br>
+          <ul id="factList" class="clearfix"></ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <hr>
+            <input type="submit" class="btn btn-success btn-lg btn-block" value="Save Guest" >
+          </div>
+        </div>
+        <div class="col-md-6"></div>
+      </div>
+  </fieldset>
 </form>

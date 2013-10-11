@@ -4,5 +4,9 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Express' });
+	
+	// Render remplate, pass in vars
+  	res.render('index', { 
+  		title: 'Express' 
+  	});
 };
