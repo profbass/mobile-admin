@@ -1,0 +1,11 @@
+{
+    "applications": {
+        "_default": {
+            "link": "merman"
+        }, 
+        "merman": {
+            "applicationId": "bzxMfkPDky6xy8G6rTjH39N2GG3U08G6NaSjPTLg", 
+            "masterKey": "oOnp8mtWTM1I06fRdjYzPWfVRz5pt5Uvc6NUhGKh"
+        }
+    }
+}

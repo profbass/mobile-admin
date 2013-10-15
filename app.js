@@ -31,11 +31,15 @@ app.use(express.session());
 app.use(app.router);
 app.use(require('less-middleware')({ src: __dirname + '/public' }));
 app.use(express.static(path.join(__dirname, 'public')));
+//Parse App Vars
+app.get('http://www.parsecdn.com/js/parse-1.2.8.min.js');
+app.locals.parseApplicationId = 'bzxMfkPDky6xy8G6rTjH39N2GG3U08G6NaSjPTLg';
+app.locals.parseJavascriptKey = 'WuQ4EQv7CW1IVX8wrdOnTOYeEUovU0vqWOGZxZfp';
 
 // development only
-if ('development' == app.get('env')) {
-  app.use(express.errorHandler());
-}
+// if ('development' == app.get('env')) {
+//   app.use(express.errorHandler());
+// }
 
 //setting routs
 app.get('/', routes.index);
